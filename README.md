@@ -57,6 +57,26 @@ You can look up modules here <https://pkg.go.dev>.
   
 - `for` is Go's `while`
 
+- Download external dependencies
+
+  ```bash
+  go get golang.org/x/example/hello/reverse
+  ```
+
+## Workspace
+
+- Initialize workspace
+
+  ```bash
+  go work init ./hello
+  ```
+
+- Add additional module to the workspace
+
+  ```bash
+  go work use ./example/hello
+  ```
+
 ## Testing
 
 - Name the test file with `_testing.go`
@@ -98,4 +118,5 @@ go install
 ## Cheat sheet
 
 - Effective Go - <https://go.dev/doc/effective_go>
+- Go module references - <https://go.dev/ref/mod>
 
